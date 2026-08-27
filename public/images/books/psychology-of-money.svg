@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="200" height="280" viewBox="0 0 200 280">
+  <rect width="200" height="280" rx="4" fill="#35322a"/>
+  <rect x="0" y="0" width="8" height="280" rx="4" fill="rgba(255,255,255,0.05)"/>
+  <text font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="rgba(255,255,255,0.6)" text-anchor="middle">
+    <tspan x='100' y='128'>The Psychology</tspan>
+    <tspan x='100' y='152'>of Money</tspan>
+  </text>
+</svg>

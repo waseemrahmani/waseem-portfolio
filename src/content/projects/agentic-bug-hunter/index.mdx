@@ -1,0 +1,23 @@
+## Overview
+
+An agentic C++ vulnerability detector built around structured code reasoning instead of asking an LLM to inspect raw source text.
+
+## The Problem
+
+Naive LLM-on-code workflows can produce plausible but poorly grounded vulnerability reports. The system needed a stronger representation of code semantics and a controlled mechanism for tool use.
+
+## Architecture
+
+<ProjectArchitecture />
+
+## Engineering Approach
+
+The pipeline parses C++ into an AST, exposes structured code information to the agent, and uses controlled tool invocation for verification. This makes the final report traceable to evidence gathered during the run.
+
+## Recognition
+
+1st place at CircuitAvishkar 2.0, IEEE CAS × Infineon Technologies, with a ₹50,000 prize.
+
+## Technology
+
+Python, C++, C++ AST parsing, LangGraph, MCP.

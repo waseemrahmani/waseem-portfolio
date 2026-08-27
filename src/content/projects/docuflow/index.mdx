@@ -1,0 +1,27 @@
+## Overview
+
+AI-powered invoice automation designed to remove repetitive manual data entry from a financial workflow.
+
+## The Problem
+
+Processing purchase and sales invoices manually consumed roughly three hours a day for around 20 invoices.
+
+## Approach
+
+DocuFlow extracts structured invoice data through a provider-agnostic AI layer that can target hosted models or an offline local vision model.
+
+## Workflow
+
+Invoice → Extraction → Validation → Ledger creation → Verification
+
+## Engineering Decisions
+
+The system was designed so extraction does not depend on a single model vendor. Offline inference was optimized for ordinary hardware, and downstream writes were verified with read-back checks.
+
+## Results
+
+Manual data entry was reduced from roughly three hours per day to under twenty minutes.
+
+## Technology
+
+FastAPI, React, Anthropic, OpenAI, Gemini, Ollama.

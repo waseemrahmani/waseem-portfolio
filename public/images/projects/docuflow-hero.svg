@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<rect width="1200" height="680" fill="#0d0d0d"/>
+<rect x="36" y="36" width="1128" height="608" rx="22" fill="#151515" stroke="#292929"/>
+<text x="76" y="120" fill="#f0f0f0" font-size="48" font-family="Arial, sans-serif" font-weight="600">DocuFlow</text>
+<text x="76" y="172" fill="#a9a9a9" font-size="24" font-family="Arial, sans-serif">AI-powered invoice automation</text>
+<g fill="none" stroke="#353535" stroke-width="2">
+<rect x="76" y="238" width="180" height="90" rx="12"/><rect x="330" y="238" width="180" height="90" rx="12"/>
+<rect x="584" y="238" width="180" height="90" rx="12"/><rect x="838" y="238" width="180" height="90" rx="12"/>
+<path d="M256 283h74M510 283h74M764 283h74"/>
+</g>
+<text x="166" y="292" fill="#777" font-size="18" text-anchor="middle" font-family="Arial, sans-serif">INPUT</text>
+<text x="420" y="292" fill="#777" font-size="18" text-anchor="middle" font-family="Arial, sans-serif">PROCESS</text>
+<text x="674" y="292" fill="#777" font-size="18" text-anchor="middle" font-family="Arial, sans-serif">AI / LOGIC</text>
+<text x="928" y="292" fill="#777" font-size="18" text-anchor="middle" font-family="Arial, sans-serif">RESULT</text>
+<text x="76" y="560" fill="#6f6f6f" font-size="16" font-family="Arial, sans-serif">Placeholder architecture visual · replace with project screenshot</text>
+</svg>
