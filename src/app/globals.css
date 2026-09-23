@@ -964,6 +964,10 @@ textarea {
 }
 
 .book-card-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2 / 3;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -971,13 +975,15 @@ textarea {
 }
 
 .book-card:hover .book-card-cover {
-  max-height: 220px;
+  max-height: 500px;
   opacity: 1;
 }
 
 .book-card-cover img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
   object-fit: contain;
   transition: transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
@@ -1598,13 +1604,21 @@ textarea.field {
     display: none;
   }
 
-  .mobile-menu-button {
-    display: grid;
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav-actions {
     transform: none;
-    gap: 3px;
+    gap: 8px;
+    flex-direction: row-reverse;
+  }
+
+  .mobile-menu-button {
+    display: grid;
+    order: -1;
   }
 
   .search-trigger {
