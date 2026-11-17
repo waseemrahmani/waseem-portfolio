@@ -2347,3 +2347,10 @@ main:has(.work-page) ~ .quote-wrap {
 .social-card:focus-visible .social-card-icon {
   color: var(--brand);
 }
+
+
+/* Progressive enhancement: content remains visible unless reveal JS is ready. */
+html.motion-ready .reveal:not(.reveal-visible) {
+  opacity: 0;
+  transform: translateY(10px);
+}
