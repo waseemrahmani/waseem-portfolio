@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "@/config/projects";
@@ -5,8 +6,45 @@ import { getProjectBySlug, getProjectContent } from "@/lib/projects";
 import { TechBadge } from "@/components/common/TechBadge";
 import { ProjectMdx } from "@/components/projects/ProjectMdx";
 
+const siteUrl = "https://waseemrahmani.vercel.app";
+
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
+
+  if (!project) {
+    return {};
+  }
+
+  const canonicalUrl = `${siteUrl}/projects/${project.slug}`;
+
+  return {
+    title: project.title,
+    description: project.shortDescription,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: `${project.title} | Waseem Rahmani`,
+      description: project.shortDescription,
+      url: canonicalUrl,
+      siteName: "Waseem Rahmani",
+      type: "article",
+    },
+    twitter: {
+      card: "summary",
+      title: `${project.title} | Waseem Rahmani`,
+      description: project.shortDescription,
+    },
+  };
 }
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
