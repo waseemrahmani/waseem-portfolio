@@ -7,6 +7,7 @@ import { XLogo } from "@/components/common/XLogo";
 export function Footer() {
   const navigation = [
     ["Home", "/"],
+    ["About", "/about"],
     ["Work", "/work"],
     ["Projects", "/projects"],
     ["Resume", "/resume"],

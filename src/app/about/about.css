@@ -1,0 +1,105 @@
+.about-profile {
+  display: grid;
+  grid-template-columns: 144px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 28px 0 36px;
+  border-bottom: 1px solid var(--border);
+}
+.about-profile-image img {
+  display: block;
+  width: 144px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.about-profile h2,
+.about-section h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.about-profile p,
+.about-section > p {
+  max-width: 760px;
+  color: var(--secondary);
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+.about-social-links,
+.about-next-links > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 18px;
+}
+.about-social-links a,
+.about-section-heading a,
+.about-next-links a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 4px;
+}
+.about-section {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border);
+}
+.about-section ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 28px;
+  padding-left: 20px;
+  color: var(--secondary);
+}
+.about-section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 18px;
+}
+.about-entry-list {
+  display: grid;
+  gap: 18px;
+}
+.about-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 18px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+.about-entry h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.about-entry p,
+.about-entry span {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.about-entry > p {
+  grid-column: 1 / -1;
+}
+.about-next-links {
+  border-bottom: 0;
+}
+@media (max-width: 640px) {
+  .about-profile {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-section ul {
+    grid-template-columns: 1fr;
+  }
+  .about-entry {
+    grid-template-columns: 1fr;
+  }
+  .about-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

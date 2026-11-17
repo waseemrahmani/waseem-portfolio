@@ -6,6 +6,7 @@ const siteUrl = "https://waseemrahmani.vercel.app";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: siteUrl, changeFrequency: "monthly", priority: 1 },
+    { url: `${siteUrl}/about`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/work`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/projects`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${siteUrl}/resume`, changeFrequency: "monthly", priority: 0.7 },

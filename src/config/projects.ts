@@ -25,7 +25,6 @@ export const projects: readonly ProjectEntry[] = [
     categories: ["AI / Agentic", "Systems / Developer Tools", "Hackathons"],
     featured: true,
     technologies: ["Python", "C++", "C++ AST", "LangGraph", "MCP"],
-    github: "https://github.com/iwaseemrahmani",
     achievement: {
       title: "1st Place",
       organization: "CircuitAvishkar 2.0 · IEEE CAS × Infineon Technologies",
@@ -41,7 +40,6 @@ export const projects: readonly ProjectEntry[] = [
     categories: ["AI / Agentic", "Automation", "Full Stack"],
     featured: true,
     technologies: ["FastAPI", "React", "Anthropic", "OpenAI", "Gemini", "Ollama"],
-    github: "https://github.com/iwaseemrahmani",
   },
   {
     slug: "phishinglens",
@@ -52,7 +50,6 @@ export const projects: readonly ProjectEntry[] = [
     categories: ["AI / Agentic", "Full Stack", "Systems / Developer Tools"],
     featured: true,
     technologies: ["Python", "FastAPI", "React", "Docker", "Kubernetes", "DistilBERT", "YOLOv5/v8", "GNN"],
-    github: "https://github.com/iwaseemrahmani",
   },
   {
     slug: "au-alumni-agentic-platform",
@@ -63,7 +60,6 @@ export const projects: readonly ProjectEntry[] = [
     categories: ["AI / Agentic", "Hackathons"],
     featured: false,
     technologies: ["LangGraph", "RAG", "ChromaDB", "Vector Databases"],
-    github: "https://github.com/iwaseemrahmani",
     achievement: {
       title: "1st Place",
       organization: "AU@100 University Hackathon",
@@ -78,7 +74,6 @@ export const projects: readonly ProjectEntry[] = [
     categories: ["Full Stack", "Automation", "Hackathons"],
     featured: false,
     technologies: ["React", "FastAPI", "Python", "SQL", "REST APIs"],
-    github: "https://github.com/iwaseemrahmani",
     achievement: {
       title: "Runner-Up",
       organization: "AURAX 2K26",
@@ -93,7 +88,6 @@ export const projects: readonly ProjectEntry[] = [
     categories: ["AI / Agentic", "Automation", "Hackathons"],
     featured: false,
     technologies: ["Python", "AI / NLP", "REST APIs", "JSON/XML"],
-    github: "https://github.com/iwaseemrahmani",
     achievement: {
       title: "1st Place",
       organization: "RTIH Idea Surge Ideathon",
