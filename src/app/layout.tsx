@@ -7,6 +7,7 @@ import { Footer } from "@/components/navigation/Footer";
 import { profile } from "@/config/profile";
 
 const siteUrl = "https://waseemrahmani.vercel.app";
+const personId = `${siteUrl}/#person`;
 
 const hanken = Hanken_Grotesk({
   variable: "--font-hanken",
@@ -24,6 +25,9 @@ export const metadata: Metadata = {
   applicationName: "Waseem Rahmani",
   creator: "Waseem Rahmani",
   publisher: "Waseem Rahmani",
+  alternates: {
+    canonical: "/",
+  },
   robots: {
     index: true,
     follow: true,
@@ -42,22 +46,33 @@ export const metadata: Metadata = {
     siteName: "Waseem Rahmani",
     type: "website",
     locale: "en_IN",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Waseem Rahmani | Software Engineer × AI",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Waseem Rahmani | Software Engineer × AI",
     description: profile.description,
+    images: ["/opengraph-image"],
   },
 };
 
 const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": `${siteUrl}/#person`,
+  "@id": personId,
   name: "Waseem Rahmani",
   url: siteUrl,
+  image: `${siteUrl}${profile.profileImage}`,
   jobTitle: profile.headline,
   description: profile.description,
+  sameAs: [profile.github, profile.linkedin],
   mainEntityOfPage: siteUrl,
 };
 
@@ -68,7 +83,7 @@ const websiteJsonLd = {
   name: "Waseem Rahmani",
   url: siteUrl,
   description: profile.description,
-  publisher: { "@id": `${siteUrl}/#person` },
+  publisher: { "@id": personId },
   inLanguage: "en-IN",
 };
 
