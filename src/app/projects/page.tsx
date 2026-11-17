@@ -1,8 +1,12 @@
+import type { Metadata } from "next";
 import { ProjectFilters } from "@/components/projects/ProjectFilters";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Projects",
-  description: "Selected engineering, AI, automation, and hackathon projects.",
+  description: "Explore software engineering, AI, agentic systems, automation, and hackathon projects built by Waseem Rahmani.",
+  alternates: {
+    canonical: "/projects",
+  },
 };
 
 export default function ProjectsPage() {
