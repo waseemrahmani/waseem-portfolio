@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import { Download } from "lucide-react";
 import { ResumeViewer } from "@/components/resume/ResumeViewer";
 import { profile } from "@/config/profile";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Resume",
-  description: "Resume and professional background.",
+  description: "View or download the resume of Waseem Rahmani, including software engineering experience, AI projects, technical skills, and achievements.",
+  alternates: {
+    canonical: "/resume",
+  },
 };
 
 export default function ResumePage() {

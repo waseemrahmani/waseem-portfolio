@@ -722,8 +722,8 @@ textarea {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(10px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 540ms cubic-bezier(.22,1,.36,1), transform 540ms cubic-bezier(.22,1,.36,1);
 }
 
@@ -2346,4 +2346,12 @@ main:has(.work-page) ~ .quote-wrap {
 .footer-social:focus-visible,
 .social-card:focus-visible .social-card-icon {
   color: var(--brand);
+}
+
+
+/* Progressive enhancement: content is visible by default. Reveal animation only
+   activates after client-side JavaScript has initialized successfully. */
+html.motion-ready .reveal:not(.reveal-visible) {
+  opacity: 0;
+  transform: translateY(10px);
 }

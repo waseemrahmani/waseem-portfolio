@@ -1,11 +1,15 @@
+import type { Metadata } from "next";
 import { profile } from "@/config/profile";
 import { EmailCard } from "@/components/contact/EmailCard";
 import { SocialCards } from "@/components/contact/SocialCards";
 import { ContactForm } from "@/components/contact/ContactForm";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Waseem Rahmani.",
+  description: "Contact Waseem Rahmani about software engineering, AI development, collaborations, and professional opportunities.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

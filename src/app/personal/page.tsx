@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import { bookSections } from "@/config/personal";
 import BookSectionAccordion from "@/components/personal/BookSection";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Personal",
-  description: "A small collection of books I read, revisit, and recommend.",
+  description: "A small collection of books Waseem Rahmani reads, revisits, and recommends.",
+  alternates: {
+    canonical: "/personal",
+  },
 };
 
 export default function PersonalPage() {
