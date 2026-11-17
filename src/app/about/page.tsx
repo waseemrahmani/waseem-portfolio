@@ -31,7 +31,15 @@ const profilePageJsonLd = {
   "@id": siteUrl + "/about#profilepage",
   url: siteUrl + "/about",
   name: "About Waseem Rahmani",
-  mainEntity: { "@id": siteUrl + "/#person" },
+  mainEntity: {
+    "@type": "Person",
+    "@id": siteUrl + "/#person",
+    name: profile.displayName,
+    url: siteUrl,
+    image: siteUrl + profile.profileImage,
+    description: profile.seoDescription,
+    sameAs: [profile.github, profile.linkedin, profile.x],
+  },
 };
 
 const focusAreas = [
