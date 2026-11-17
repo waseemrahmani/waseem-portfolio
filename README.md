@@ -16,7 +16,7 @@ A Ramx-inspired personal portfolio for Waseem Rahmani.
 ## Routes
 
 - `/`
-- `/work`
+- `/about`\n- `/work`
 - `/projects`
 - `/projects/[slug]`
 - `/resume`
