@@ -68,7 +68,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   };
 
   return (
-    <div className="site-container page-shell project-detail-page">\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }} />
+    <div className="site-container page-shell project-detail-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }} />
       <header className="page-header">
         <Link href="/projects" className="section-link project-back">← Projects</Link>
         <p className="eyebrow project-year">{project.year}</p>
