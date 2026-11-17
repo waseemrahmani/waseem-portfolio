@@ -2,6 +2,8 @@ export const profile = {
   displayName: "Waseem Rahmani",
   headline: "Software Engineer × AI",
   description:
+    "I’m Waseem Rahmani, a software engineer working across AI systems, agentic workflows, full-stack development, automation, and developer tools. I build practical software that solves real problems.",
+  seoDescription:
     "Waseem Rahmani is a software engineer working across AI systems, agentic workflows, full-stack development, automation, and developer tools. He builds practical software that solves real problems.",
   email: "waseemrahmanim@gmail.com",
   github: "https://github.com/waseemrahmani",
