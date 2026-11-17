@@ -12,7 +12,7 @@ const socials = [
   },
   {
     label: "LinkedIn",
-    handle: "@waseemrahmani",
+    handle: "linkedin.com/in/iwaseemrahmani",
     href: profile.linkedin,
     icon: Linkedin,
     external: true,
