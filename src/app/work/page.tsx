@@ -1,12 +1,16 @@
+import type { Metadata } from "next";
 import { ExperienceEntry } from "@/components/work/ExperienceEntry";
 import { experiences } from "@/config/experience";
 import { achievements, leadership } from "@/config/achievements";
 import { Section } from "@/components/common/Section";
 import { ScrollReveal } from "@/components/common/ScrollReveal";
 
-export const metadata = {
-  title: "Work",
-  description: "Professional experience, internships, freelancing, achievements, and leadership.",
+export const metadata: Metadata = {
+  title: "Work and Experience",
+  description: "Explore Waseem Rahmani's software engineering and AI experience, internships, projects, achievements, and technical leadership.",
+  alternates: {
+    canonical: "/work",
+  },
 };
 
 export default function WorkPage() {
