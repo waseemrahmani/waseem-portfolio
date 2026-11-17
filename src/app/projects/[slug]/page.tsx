@@ -38,7 +38,7 @@ export async function generateMetadata({
       url: canonicalUrl,
       siteName: "Waseem Rahmani",
       type: "article",
-      images: ["/opengraph-image"],
+      images: [siteUrl + "/projects/" + project.slug + "/opengraph-image"],
     },
     twitter: {
       card: "summary_large_image",
