@@ -41,7 +41,7 @@ export async function generateMetadata({
       images: ["/opengraph-image"],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: `${project.title} | Waseem Rahmani`,
       description: project.shortDescription,
       images: ["/opengraph-image"],
