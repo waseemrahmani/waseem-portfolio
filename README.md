@@ -78,3 +78,15 @@ The project uses the TypeScript alias `@/*` → `src/*`, configured in `tsconfig
 10. Visit the homepage. The Spotify line should show the currently playing track or the last played track.
 
 Spotify currently requires a loopback IP such as `127.0.0.1` for local HTTP redirects rather than `localhost`.
+
+
+## Post-deployment search setup
+
+1. Add the production URL prefix `https://waseemrahmani.vercel.app/` in Google Search Console and verify ownership.
+2. Submit `https://waseemrahmani.vercel.app/sitemap.xml`.
+3. Inspect the homepage, About page, and each project URL with URL Inspection.
+4. Run the Rich Results Test against the About page and a project detail page.
+5. Add the site to Bing Webmaster Tools and submit the sitemap.
+6. Monitor indexing, branded queries, clicks, impressions, and crawl issues over time.
+
+Search Console can report indexing and search performance; sitemap submission does not guarantee indexing or rankings.
