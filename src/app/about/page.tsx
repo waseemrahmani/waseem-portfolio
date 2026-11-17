@@ -22,6 +22,17 @@ export const metadata: Metadata = {
   },
 };
 
+const siteUrl = "https://waseemrahmani.vercel.app";
+
+const profilePageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": siteUrl + "/about#profilepage",
+  url: siteUrl + "/about",
+  name: "About Waseem Rahmani",
+  mainEntity: { "@id": siteUrl + "/#person" },
+};
+
 const focusAreas = [
   "AI engineering and agentic systems",
   "Full-stack software development",
@@ -32,7 +43,7 @@ const focusAreas = [
 
 export default function AboutPage() {
   return (
-    <div className="site-container page-shell about-page">
+    <div className="site-container page-shell about-page">\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }} />
       <header className="page-header">
         <p className="eyebrow">About</p>
         <h1 className="page-title">Waseem Rahmani</h1>
