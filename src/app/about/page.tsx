@@ -7,7 +7,7 @@ import { experiences } from "@/config/experience";
 import { achievements } from "@/config/achievements";
 
 export const metadata: Metadata = {
-  title: "About Waseem Rahmani",
+  title: "About",
   description:
     "Learn about Waseem Rahmani, a software engineer working across AI systems, agentic workflows, full-stack development, automation, and developer tools.",
   alternates: {
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       "Professional profile, engineering experience, projects, and achievements of Waseem Rahmani.",
     url: "/about",
     type: "profile",
+    images: ["/opengraph-image"],
   },
 };
 
