@@ -43,7 +43,8 @@ const focusAreas = [
 
 export default function AboutPage() {
   return (
-    <div className="site-container page-shell about-page">\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }} />
+    <div className="site-container page-shell about-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }} />
       <header className="page-header">
         <p className="eyebrow">About</p>
         <h1 className="page-title">Waseem Rahmani</h1>
