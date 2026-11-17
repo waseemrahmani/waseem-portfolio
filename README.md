@@ -1,6 +1,6 @@
 # Waseem Rahmani Portfolio
 
-A Ramx-inspired personal portfolio for Waseem Rahmani.
+A personal portfolio for Waseem Rahmani.
 
 ## Stack
 
@@ -16,7 +16,8 @@ A Ramx-inspired personal portfolio for Waseem Rahmani.
 ## Routes
 
 - `/`
-- `/about`\n- `/work`
+- `/about`
+- `/work`
 - `/projects`
 - `/projects/[slug]`
 - `/resume`
@@ -25,23 +26,25 @@ A Ramx-inspired personal portfolio for Waseem Rahmani.
 
 ## SEO
 
-- Global metadata and canonical metadata base are configured in `src/app/layout.tsx`.
-- Person and WebSite JSON-LD structured data are emitted from the root layout.
-- `src/app/sitemap.ts` generates the XML sitemap, including project detail pages.
+- Canonical production origin: `https://waseemrahmani.vercel.app`.
+- Global title, description, canonical metadata, robots directives, Open Graph, and Twitter metadata are configured in `src/app/layout.tsx`.
+- Person and WebSite JSON-LD connect the portfolio to its owner and public profiles.
+- `/about` is the dedicated professional profile page and includes `ProfilePage` structured data.
+- `src/app/sitemap.ts` generates the XML sitemap, including the About page and project detail pages.
 - `src/app/robots.ts` generates robots directives and references the sitemap.
-- Individual project pages generate title, description, canonical, Open Graph, and Twitter metadata.
-
-The production URL is currently configured as `https://waseemrahmani.vercel.app`. Update the site URL in the SEO route/layout files if the production domain changes.
+- Individual project pages generate unique metadata, CreativeWork structured data, and project-specific social preview images.
+- `src/app/opengraph-image.tsx` and `src/app/icon.tsx` generate the website social preview and favicon.
+- Public identity and social profile URLs are centralized in `src/config/profile.ts`.
 
 ## Before production
 
-1. Replace `public/images/profile/waseem-placeholder.svg` with the final profile image and ensure `src/config/profile.ts` points to the final asset.
-2. Replace project placeholder visuals with actual screenshots/diagrams.
+1. Verify the LinkedIn and X URLs in `src/config/profile.ts` against the live profiles.
+2. Replace project placeholder visuals with actual screenshots and architecture diagrams.
 3. Reconcile and replace the published resume PDF with the canonical final version.
 4. Add the IIC Letter of Recommendation under `public/documents/` if it should be public.
 5. Add Spotify credentials to `.env.local`.
 6. Configure contact delivery inside `src/app/api/contact/route.ts`.
-7. Verify the LinkedIn, GitHub, and X profile URLs in `src/config/profile.ts` before adding them to Person structured data.
+7. Verify that each project has its own repository URL before adding links to project cards.
 8. Run `npm install`, `npm run dev`, and `npm run build`.
 
 ## Spotify
