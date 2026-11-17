@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   applicationName: "Waseem Rahmani",
   creator: "Waseem Rahmani",
   publisher: "Waseem Rahmani",
+  verification: {
+    google: "-P2MNC1-AM6DhWqAO7U_HJa9jZPwJHO1nI2JOmLwW74",
+  },
   alternates: {
     canonical: "/",
   },
