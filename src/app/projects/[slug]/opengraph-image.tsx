@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 import { notFound } from "next/navigation";
-import { getProjectBySlug } from "@/lib/projects";
+import { projects } from "@/config/projects";
 
 export const runtime = "edge";
 export const alt = "Project by Waseem Rahmani";
@@ -13,7 +13,7 @@ export default async function ProjectOpenGraphImage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const project = getProjectBySlug(slug);
+  const project = projects.find((entry) => entry.slug === slug);
   if (!project) notFound();
 
   return new ImageResponse(
