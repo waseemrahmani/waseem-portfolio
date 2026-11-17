@@ -21,16 +21,27 @@ A Ramx-inspired personal portfolio for Waseem Rahmani.
 - `/projects/[slug]`
 - `/resume`
 - `/contact`
+- `/personal`
+
+## SEO
+
+- Global metadata and canonical metadata base are configured in `src/app/layout.tsx`.
+- Person and WebSite JSON-LD structured data are emitted from the root layout.
+- `src/app/sitemap.ts` generates the XML sitemap, including project detail pages.
+- `src/app/robots.ts` generates robots directives and references the sitemap.
+- Individual project pages generate title, description, canonical, Open Graph, and Twitter metadata.
+
+The production URL is currently configured as `https://waseemrahmani.vercel.app`. Update the site URL in the SEO route/layout files if the production domain changes.
 
 ## Before production
 
-1. Replace `public/images/profile/waseem-placeholder.svg` with the final profile image.
+1. Replace `public/images/profile/waseem-placeholder.svg` with the final profile image and ensure `src/config/profile.ts` points to the final asset.
 2. Replace project placeholder visuals with actual screenshots/diagrams.
 3. Reconcile and replace the published resume PDF with the canonical final version.
 4. Add the IIC Letter of Recommendation under `public/documents/` if it should be public.
 5. Add Spotify credentials to `.env.local`.
 6. Configure contact delivery inside `src/app/api/contact/route.ts`.
-7. Replace `metadataBase` in `src/app/layout.tsx` with the final production domain.
+7. Verify the LinkedIn, GitHub, and X profile URLs in `src/config/profile.ts` before adding them to Person structured data.
 8. Run `npm install`, `npm run dev`, and `npm run build`.
 
 ## Spotify
