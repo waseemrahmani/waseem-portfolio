@@ -56,8 +56,7 @@ const personJsonLd = {
   "@id": `${siteUrl}/#person`,
   name: "Waseem Rahmani",
   url: siteUrl,
-  image: `${siteUrl}/images/profile/waseem.jpg`,
-  jobTitle: "Software Engineer",
+  jobTitle: profile.headline,
   description: profile.description,
   mainEntityOfPage: siteUrl,
 };
