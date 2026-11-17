@@ -72,7 +72,7 @@ const personJsonLd = {
   image: `${siteUrl}${profile.profileImage}`,
   jobTitle: profile.headline,
   description: profile.description,
-  sameAs: [profile.github, profile.linkedin],
+  sameAs: [profile.github, profile.linkedin, profile.x],
   mainEntityOfPage: siteUrl,
 };
 
