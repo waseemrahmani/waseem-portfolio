@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     type: "profile",
     images: ["/opengraph-image"],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Waseem Rahmani | Software Engineer × AI",
+    description: "Professional profile, engineering experience, projects, and achievements of Waseem Rahmani.",
+    images: ["/opengraph-image"],
+  },
 };
 
 const siteUrl = "https://waseemrahmani.vercel.app";
