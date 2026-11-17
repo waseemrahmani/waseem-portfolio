@@ -38,11 +38,13 @@ export async function generateMetadata({
       url: canonicalUrl,
       siteName: "Waseem Rahmani",
       type: "article",
+      images: ["/opengraph-image"],
     },
     twitter: {
       card: "summary",
       title: `${project.title} | Waseem Rahmani`,
       description: project.shortDescription,
+      images: ["/opengraph-image"],
     },
   };
 }
@@ -53,9 +55,20 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   if (!project) notFound();
 
   const content = getProjectContent(slug);
+  const projectJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": siteUrl + "/projects/" + project.slug + "#project",
+    name: project.title,
+    description: project.shortDescription,
+    url: siteUrl + "/projects/" + project.slug,
+    creator: { "@id": siteUrl + "/#person" },
+    keywords: project.technologies.join(", "),
+    inLanguage: "en-IN",
+  };
 
   return (
-    <div className="site-container page-shell project-detail-page">
+    <div className="site-container page-shell project-detail-page">\n      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }} />
       <header className="page-header">
         <Link href="/projects" className="section-link project-back">← Projects</Link>
         <p className="eyebrow project-year">{project.year}</p>
