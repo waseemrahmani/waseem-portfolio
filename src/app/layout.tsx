@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "Waseem Rahmani | Software Engineer × AI",
     template: "%s | Waseem Rahmani",
   },
-  description: profile.description,
+  description: profile.seoDescription,
   applicationName: "Waseem Rahmani",
   creator: "Waseem Rahmani",
   publisher: "Waseem Rahmani",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Waseem Rahmani | Software Engineer × AI",
-    description: profile.description,
+    description: profile.seoDescription,
     url: siteUrl,
     siteName: "Waseem Rahmani",
     type: "website",
